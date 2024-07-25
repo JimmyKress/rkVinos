@@ -1,0 +1,29 @@
+.cartaContainer {
+  max-width: 100%; /* Sobrescribe cualquier max-width predeterminado */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+  padding: 0; /* Elimina cualquier padding */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  box-sizing: border-box; /* Asegura que el padding no expanda el contenedor */
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #8B4513;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: -40px;
+}
+
+button:hover {
+  background-color: #ac6b3d;
+  
+}
+
+
+
+
+

@@ -1,0 +1,118 @@
+.footer {
+    background-color: #000000; 
+    padding: 2px 20px;
+    display: flex;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: flex-start; 
+    z-index: 1000;
+    color: white;     
+    margin-top: 10px; /* Ajusta el margen superior del pie de página */
+    bottom: 0; /* Sitúa el footer en la parte inferior de su contenedor */
+}
+
+
+.subLogo {
+    height: 80px; 
+    margin-right: auto; 
+    margin-left: 130px;
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif; /* Fuente básica, puedes cambiarla */
+    text-align: center; /* Centrar el texto */
+    
+}
+
+
+.subLogo .subMain {
+    font-size: 2.5rem; /* Tamaño del texto principal */
+    font-weight: bold; 
+    color: rgba(128, 0, 0, 0.8);
+    margin: 0; /* Elimina el margen del párrafo */
+}
+
+.subLogo .subb {
+    font-size: 1.2rem; /* Tamaño del texto secundario */
+    color: black; /* Color SteelBlue */
+    margin: 0; /* Elimina el margen del párrafo */
+    
+}
+
+ul {
+    list-style-type: none; /* Quitar las viñetas */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Para que los elementos de la lista estén en línea */
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    color: white; /* Color del texto */
+}
+
+li {
+    margin: 10px 0; /* Espacio vertical entre los elementos de la lista */
+    display: flex;
+    align-items: center; /* Alinea los iconos y el texto verticalmente */
+}
+
+li i {
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+    font-size: 1.2em; /* Tamaño del icono */
+}
+
+.firma{
+    background-color: #aaa9a9fb;  
+    color: black; /* Color del texto en blanco */
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firma .rk{
+    margin-top: 25px;
+}
+
+/* Para el pie de página */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+        width: 100%;
+        box-sizing: border-box;
+        flex-shrink: 0;
+        position: relative;
+        z-index: 1; /* Ajusta el z-index según sea necesario */
+        
+    }
+
+    .firma {
+        /*position: fixed;*/
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        
+    }
+    
+    .subLogo {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .subLogo .subMain {
+        font-size: 2rem;
+    }
+
+    .subLogo .subb {
+        font-size: 1rem;
+    }
+
+    ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}

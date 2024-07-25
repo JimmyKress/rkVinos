@@ -1,0 +1,21 @@
+<form>
+  <div class="mb-3">
+    <label for="nombre" class="form-label">Nombre</label>
+    <input type="text" class="form-control" [(ngModel)]="bebida.nombre" name="nombre" id="nombre" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="cepa" class="form-label">Cepa</label>
+    <input type="text" class="form-control" [(ngModel)]="bebida.cepa" name="cepa" id="cepa" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="bodega" class="form-label">Bodega</label>
+    <input type="text" class="form-control" [(ngModel)]="bebida.bodega" name="bodega" id="bodega" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="image" class="form-label">Imagen</label>
+    <input type="file" class="form-control" [(ngModel)]="bebida.image"  name="image" name="image" id="image">
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="envData()">Save</button>
+</form>
+
+

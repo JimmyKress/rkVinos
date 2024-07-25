@@ -1,0 +1,36 @@
+/* styles.css */
+html, body {
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url('https://s1.1zoom.me/big0/590/Barrel_Wine_Bottle_Stemware_Foliage_529296_1280x941.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+    background-color: #EAEAEA;
+    font-family: 'Roboto', sans-serif;
+  
+}
+
+.container {
+    width: 100% !important; /* Asegura que el contenedor ocupe todo el ancho */
+    max-width: 100% !important; /* Sobrescribe cualquier max-width predeterminado */
+    padding: 0 !important; /* Elimina cualquier padding */
+    margin: 0 auto !important; /* Elimina cualquier margen */
+}
+
+/* Para el estilo global */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        max-height: 200px;
+        /* Altura mínima de la página */
+    }
+}

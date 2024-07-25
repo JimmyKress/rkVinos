@@ -1,0 +1,28 @@
+<!-- bebida-ficha.component.html -->
+@if(bebida) { 
+  <div class="fichaContainer" style="font-family: 'Times New Roman', serif;">
+    <h1>{{ bebida.nombre }}</h1>
+    <img [src]="bebida.image" alt="{{ bebida.nombre }}">
+    <div class="info">
+        <p><strong>Clase:</strong> {{ bebida.clase }}</p>
+        <p><strong>Cepa:</strong> {{ bebida.cepa }}</p>
+        <p><i class="bi bi-shop"><strong> Bodega:</strong> {{ bebida.bodega }}</i></p>
+        
+        <div class="maridaje">
+          <div class="card-header">
+            <h5>
+              Maridaje
+            </h5>
+          </div>
+          <div class="card-body">
+            <div> 
+               {{ bebida.maridaje }}
+            </div>
+          </div>   
+        </div>
+    </div>
+  </div>
+}
+@else {
+  <p>Cargando los detalles de la bebida...</p>
+}

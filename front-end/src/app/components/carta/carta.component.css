@@ -1,0 +1,22 @@
+.containerCarta {
+    width: 80%; 
+    max-width: 600px;
+    padding: 20px;
+    background-color:  #8B4513;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px; 
+}
+
+.containerCarta .cita{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 1.2em; 
+    color: #FFD700; 
+}
+

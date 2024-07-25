@@ -1,0 +1,135 @@
+.fichaContainer {
+    margin: 100px;
+    margin-top: 180px;
+    padding: 20px;
+    position: relative;
+    background-color:  #8B4513;
+    border-radius: 10px;
+    border: 2px solid #6d6a6afb;
+    display: flex;
+    flex-direction: column; /* Asegura que los hijos se alineen en columna */
+    align-items: center; /* Alinea los ítems al centro del contenedor */
+    color: black;
+    }
+
+/* Estilos CSS para la cabecera del nombre del vino */
+.fichaContainer h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    padding: 10px 20px; /* Espaciado interno para el cuadro */
+    background-color: #851f09; /* Color de fondo del cuadro */
+    border-radius: 10px; /* Radio de borde para hacerlo redondeado */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 80%; 
+    max-width: 500px; 
+
+}
+  
+
+.fichaContainer img {
+    width: 400px;
+    height: 550px;
+    margin: 20px 0; /* Espacio vertical alrededor de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+}
+
+.fichaContainer .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    color: white; 
+    width: 100%; 
+}
+
+.fichaContainer .info p {
+    margin: 10px 0; /* Espaciado entre los párrafos */
+    font-size: 1.2em; /* Tamaño de fuente para los párrafos */
+    color: white; /* Color del texto de los párrafos */
+    background: #851f09; 
+    padding: 10px; 
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    width: 80%; 
+    max-width: 500px; 
+    text-align: center; 
+}
+
+.fichaContainer .info p strong {
+    color: white; 
+}
+
+.fichaContainer .info p:nth-child(odd) {
+    background: #851f09;
+}
+
+.maridaje {
+    max-width: 500px; /* Ajusta el ancho máximo del maridaje */
+    background: #851f09;
+    width: 100%; 
+    margin: 20px 0; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+.maridaje .card-header,
+.maridaje .card-body {
+    text-align: center; /* Centra el texto dentro de los contenedores */
+    width: 100%; /* Asegura que ocupen todo el ancho del contenedor */
+}
+
+.maridaje .card-header {
+    background-color: #a00a19; /* Fondo rojo */
+    color: white; /* Texto blanco */
+    padding: 1.5rem; /* Aumenta el espacio de relleno para resaltar la cabecera */
+    margin-bottom: 0; /* Elimina el margen inferior por defecto */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente dentro del contenedor flex */
+    align-items: center; /* Centra verticalmente dentro del contenedor flex */
+    border-top-left-radius: 5px; /* Bordes redondeados en la esquina superior izquierda */
+    border-top-right-radius: 5px; /* Bordes redondeados en la esquina superior derecha */
+}
+
+.maridaje .card-body {
+    margin: 0 auto; /* Centra horizontalmente el card-body */
+    padding: 1rem; /* Aumenta el espacio de relleno */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #851f09; /* Asegura que el fondo del card-body sea completo */
+    color: white;
+}
+
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .fichaContainer {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        margin-top: 100px; 
+
+    }
+
+    .fichaContainer img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .fichaContainer .info {
+        align-items: center;
+        text-align: center;
+    }
+
+    .fichaContainer .info h1 {
+        font-size: 1.5em; /* Tamaño de fuente reducido para el título */
+    }
+
+    .fichaContainer .info p {
+        font-size: 1em; /* Tamaño de fuente reducido para los párrafos */
+    }
+}
+

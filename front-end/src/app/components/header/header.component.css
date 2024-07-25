@@ -1,0 +1,64 @@
+.header {
+    background-color: #aaa9a9fb; 
+    padding: 10px 20px; 
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%; /* Asegura que el header ocupe todo el ancho */
+    box-sizing: border-box;
+    position: fixed;
+    top: 0; /* Asegura que el header esté en la parte superior */
+    left: 0;
+    justify-content: flex-start; /* Alineando el contenido a la izquierda */
+    z-index: 1000; 
+}
+
+.logo {
+    margin-left: 20px; /* Ajusta el margen izquierdo */
+    font-family: 'Arial', sans-serif;
+    text-align: center; /* Centrar el texto */
+}
+
+.logo .main {
+    font-size: 2rem; /* Tamaño del texto principal */
+    font-weight: bold; 
+    color: rgba(128, 0, 0, 0.8);
+    margin: 0; /* Elimina el margen del párrafo */
+}
+
+.logo .sub {
+    font-size: 1rem; /* Tamaño del texto secundario */
+    color: black; /* Color SteelBlue */
+    margin: 0; /* Elimina el margen del párrafo */
+}
+
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+}
+  
+.logo-link:hover {
+    text-decoration: none;
+}
+  
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .header {
+        height: 80px; 
+        padding: 5px 10px; /* Ajusto el padding para dispositivos pequeños */
+    
+    }
+
+    .logo {
+        margin-left: 10px; /* Reducir el margen izquierdo */
+    }
+
+    .logo .main {
+        font-size: 1.5rem; /* Ajustar el tamaño del texto principal */
+    }
+
+    .logo .sub {
+        font-size: 0.8rem; /* Ajustar el tamaño del texto secundario */
+    }
+}

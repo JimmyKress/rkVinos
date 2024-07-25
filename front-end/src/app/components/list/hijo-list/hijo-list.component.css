@@ -1,0 +1,118 @@
+/* Contenedor para las tarjetas */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1em; 
+    justify-content: center;
+    align-items: center;
+    margin: 60px; 
+    padding: 40px; 
+    box-sizing: border-box; /* Asegura que el padding no expanda el contenedor */
+
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 15spx;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 18rem;
+}
+
+/* Tarjetas individuales */
+.cards-container .card {
+    margin: 5px; 
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 100%;
+    background-color: #261a1a;
+}
+
+.cards-container .card img {
+    width: 99%;
+    height: 350px;
+    object-fit:inherit; /* Asegura que la imagen cubra el área sin deformarse */
+    margin-left: 0px; 
+    margin: 1px;
+    cursor: pointer;
+
+}
+
+.card-body {
+    text-align: center; /* Centra el texto del h5 dentro de .card-body */
+}
+
+/*Estilo para la cepa, tipo y bodega*/
+.cards-container .card ul {
+    padding: 0; /* Elimina el padding por defecto del ul */
+    text-align: center; /* Centra el texto de los elementos li */
+}
+
+.cards-container .card ul li .wp-button {
+    color: white; 
+    font-family: cursive;
+    list-style: none;
+    text-align: center; /* Centra el texto de los elementos li */
+}
+
+/* Centra el botón dentro del li */
+.cards-container .card ul li button {
+    display: block;
+    margin: 0 auto; /* Centra el botón dentro del li */
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+/*Para el boton de wp*/
+.wp-button {
+    display: flex;
+    align-items: center;
+    background-color: #46B450;    
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    justify-content: center; /* Centra el contenido del botón */
+    
+}
+
+.wp-button:hover {
+    background-color: #24882c; 
+}
+
+.wp-button .button-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; 
+}
+
+.float {
+    text-decoration: none;
+    color: inherit;
+}
+  
+@media (max-width: 1200px) {
+    .cards-container {
+      grid-template-columns: repeat(3, 1fr); /* Tres columnas en pantallas grandes pero más pequeñas que 1200px */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .cards-container {
+      grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
+    }
+  }
+  
+  @media (max-width: 728px) {
+    .cards-container {
+      grid-template-columns: repeat(1, 1fr); /* Dos columnas en pantallas pequeñas */
+    }
+
+  }
+  
+  
